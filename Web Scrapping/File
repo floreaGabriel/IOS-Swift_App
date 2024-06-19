@@ -1,0 +1,37 @@
+
+    try:
+        accept_cookies_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Accept cookies")]'))
+        )
+        accept_cookies_button.click()
+        print("Clicked on accept cookies")
+        time.sleep(2)
+    except Exception as e:
+        print(f"Cookie consent button not found or could not be clicked: {e}")
+
+    try:
+        pop_up_button = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, 'pop-close-btn'))
+        )
+        pop_up_button.click()
+        print("Closed pop-up")
+    except Exception as e:
+        print(f"Pop up element not found or could not be clicked: {e}")
+
+    try:
+        notifications_button = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, '_24EHh'))
+        )
+        notifications_button.click()
+        print("Closed notifications button")
+    except Exception as e:
+        print(f"Notifications element not found or could not be clicked: {e}")
+
+    try:
+        best_sellers = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, 'pc2023-header-tab--tab-item--2Hs_3sA'))
+        )
+        best_sellers.click()
+        print("Clicked on best sellers")
+    except Exception as e:
+        print(f"Best sellers element not found or could not be clicked: {e}")
