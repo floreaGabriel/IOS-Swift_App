@@ -14,7 +14,14 @@
 		645939712C2167D800C79050 /* ProductsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939702C2167D800C79050 /* ProductsPage.swift */; };
 		645939732C216A6000C79050 /* app.py in Resources */ = {isa = PBXBuildFile; fileRef = 645939722C216A6000C79050 /* app.py */; };
 		645939772C2184F400C79050 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939762C2184F400C79050 /* product.swift */; };
+		6475901F2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6475901D2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodeld */; };
+		647590222C24036A00BDF8E3 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647590202C24036A00BDF8E3 /* Entity+CoreDataClass.swift */; };
+		647590232C24036A00BDF8E3 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647590212C24036A00BDF8E3 /* Entity+CoreDataProperties.swift */; };
+		647590252C24049900BDF8E3 /* SalvatorDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647590242C24049900BDF8E3 /* SalvatorDate.swift */; };
+		647590272C24057600BDF8E3 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647590262C24057600BDF8E3 /* PersistenceController.swift */; };
+		647590292C240D0900BDF8E3 /* ProduseSalvatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647590282C240D0900BDF8E3 /* ProduseSalvatePage.swift */; };
 		64E2E8CE2C22B02600EFD27D /* File in Resources */ = {isa = PBXBuildFile; fileRef = 64E2E8CD2C22B02600EFD27D /* File */; };
+		64F8E28F2C23F7E500040330 /* ProductDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8E28E2C23F7E500040330 /* ProductDetailsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +33,14 @@
 		645939702C2167D800C79050 /* ProductsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPage.swift; sourceTree = "<group>"; };
 		645939722C216A6000C79050 /* app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = app.py; sourceTree = "<group>"; };
 		645939762C2184F400C79050 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		6475901E2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SalvareDateModel.xcdatamodel; sourceTree = "<group>"; };
+		647590202C24036A00BDF8E3 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		647590212C24036A00BDF8E3 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		647590242C24049900BDF8E3 /* SalvatorDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalvatorDate.swift; sourceTree = "<group>"; };
+		647590262C24057600BDF8E3 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		647590282C240D0900BDF8E3 /* ProduseSalvatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduseSalvatePage.swift; sourceTree = "<group>"; };
 		64E2E8CD2C22B02600EFD27D /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		64F8E28E2C23F7E500040330 /* ProductDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +57,6 @@
 		645939562C21513200C79050 = {
 			isa = PBXGroup;
 			children = (
-				64E2E8CD2C22B02600EFD27D /* File */,
 				645939612C21513200C79050 /* Web Scrapping */,
 				645939602C21513200C79050 /* Products */,
 			);
@@ -60,11 +73,19 @@
 		645939612C21513200C79050 /* Web Scrapping */ = {
 			isa = PBXGroup;
 			children = (
+				647590202C24036A00BDF8E3 /* Entity+CoreDataClass.swift */,
+				647590212C24036A00BDF8E3 /* Entity+CoreDataProperties.swift */,
+				6475901D2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodeld */,
 				645939622C21513200C79050 /* Web_ScrappingApp.swift */,
 				645939762C2184F400C79050 /* product.swift */,
 				645939642C21513200C79050 /* ContentView.swift */,
 				645939702C2167D800C79050 /* ProductsPage.swift */,
+				64F8E28E2C23F7E500040330 /* ProductDetailsPage.swift */,
+				647590242C24049900BDF8E3 /* SalvatorDate.swift */,
+				647590282C240D0900BDF8E3 /* ProduseSalvatePage.swift */,
+				647590262C24057600BDF8E3 /* PersistenceController.swift */,
 				645939662C21513300C79050 /* Assets.xcassets */,
+				64E2E8CD2C22B02600EFD27D /* File */,
 				645939682C21513300C79050 /* Preview Content */,
 				645939722C216A6000C79050 /* app.py */,
 			);
@@ -152,9 +173,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				645939712C2167D800C79050 /* ProductsPage.swift in Sources */,
+				647590222C24036A00BDF8E3 /* Entity+CoreDataClass.swift in Sources */,
+				647590232C24036A00BDF8E3 /* Entity+CoreDataProperties.swift in Sources */,
+				64F8E28F2C23F7E500040330 /* ProductDetailsPage.swift in Sources */,
+				647590252C24049900BDF8E3 /* SalvatorDate.swift in Sources */,
+				6475901F2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodeld in Sources */,
+				647590292C240D0900BDF8E3 /* ProduseSalvatePage.swift in Sources */,
 				645939772C2184F400C79050 /* product.swift in Sources */,
 				645939652C21513200C79050 /* ContentView.swift in Sources */,
 				645939632C21513200C79050 /* Web_ScrappingApp.swift in Sources */,
+				647590272C24057600BDF8E3 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6475901D2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6475901E2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodel */,
+			);
+			currentVersion = 6475901E2C2402D500BDF8E3 /* SalvareDateModel.xcdatamodel */;
+			path = SalvareDateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 645939572C21513200C79050 /* Project object */;
 }

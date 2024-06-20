@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Web_ScrappingApp: App {
+    let persistenceController = PersistenceController.shared
+    @StateObject private var salvatorDate = SalvatorDate()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(salvatorDate)
         }
     }
 }
+

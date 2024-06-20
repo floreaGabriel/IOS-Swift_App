@@ -45,9 +45,15 @@ def scrape_alibaba():
         except Exception as e:
             image_url = "N/A"
             print(f"Product image not found: {e}")
+        
+        try:
+            product_url = produs.find_element(By.TAG_NAME, "a").get_attribute("href")
+        except Exception as e:
+            product_url = "N/A"
+            print(f"Product link not found: {e}")
             
         print(name, sales, price)
-        product_list.append({'name': name, 'sales': sales, 'price': price, 'image_url': image_url})
+        product_list.append({'name': name, 'sales': sales, 'price': price, 'image_url': image_url, 'product_url': product_url})
 
     driver.quit()
     return product_list

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var salvatorManager: SalvatorDate
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -31,6 +34,17 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                     
+                    Spacer()
+                    
+                    NavigationLink(destination: ProduseSalvatePage().environmentObject(salvatorManager)) {
+                        Text("Vezi produsele salvate")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
+
                     Spacer()
                 }
                 

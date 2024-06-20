@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductsPage : View {
     
     @State private var products: [Product] = []
-    
+    @State private var searchText: String = ""
     var body: some View {
         
         VStack {
@@ -20,28 +20,46 @@ struct ProductsPage : View {
                 .fontWeight(.bold)
                 .foregroundColor(.blue)
             
-            List(products) { product in
-                VStack(alignment: .leading) {
-                    AsyncImage(url: URL(string: product.image_url)) { image in
+            TextField("Cauta produse", text: $searchText)
+                .padding()
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+                .padding(.horizontal)
+
+            List(filteredProducts) { product in
+                NavigationLink(destination: ProductDetailsPage(product: product)) {
+                        HStack {
+                            AsyncImage(url: URL(string: product.image_url)) { image in
                                 image.resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(height: 100)
                             } placeholder: {
                                 ProgressView()
                             }
-                    Text(product.name)
-                        .font(.headline)
-                    Text("Price: \(product.price)")
-                        .font(.subheadline)
-                    Text("Sold: \(product.sales)")
-                        .font(.subheadline)
+                            VStack(alignment: .leading) {
+                                Text(product.name)
+                                    .font(.headline)
+                                Text("Price: \(product.price)")
+                                    .font(.subheadline)
+                                Text("Sold: \(product.sales)")
+                                    .font(.subheadline)
+                            }
+                        }
+                    }
+                }
+                .onAppear{
+                    fetchProducts()
                 }
             }
-            .onAppear{
-                fetchProducts()
+                    }
+    
+    var filteredProducts: [Product] {
+            if searchText.isEmpty {
+                return products
+            } else {
+                return products.filter { $0.name.lowercased().contains(searchText.lowercased()) }
             }
         }
-    }
     
     func fetchProducts() {
         guard let url = URL(string: "http://172.20.10.5:8080/products") else {
