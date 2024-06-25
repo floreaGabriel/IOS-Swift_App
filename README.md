@@ -38,3 +38,10 @@ M-am documentat despre interfata grafica a aplicatiei, si cum pot adauga functio
 ![WhatsApp Image 2024-06-25 at 08 20 26 (1)](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/f7691a1f-1735-4a91-8835-590d64ff48be)
 ![WhatsApp Image 2024-06-25 at 08 20 25](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/3d3f4679-003f-4b2e-b877-4da05db2cd9e)
 ![WhatsApp Image 2024-06-25 at 08 20 24](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/a210780c-2f6b-4838-972a-c3791d43d959)
+
+# 25.06.2024
+Am cautat cum pot adauga sistem de notificari si imbunatatire a performantelor aplicatiei
+- Am adaugat sistem de notificari in momentul in care user-ul salveaza un produs (un mesaj de confirmare)
+<img width="479" alt="Screenshot 2024-06-25 at 09 44 37" src="https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/ce378eab-1830-47d4-8ca4-427ef675880d">
+<img width="480" alt="Screenshot 2024-06-25 at 09 44 58" src="https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/a75bc6a6-a667-40ea-bde1-b34f51430c99">
+- Am imbunatatit performanta astfel incat sa nu imi mai incarce produsele de fiecare data pe pagina cu produse!
