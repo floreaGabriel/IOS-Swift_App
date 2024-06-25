@@ -24,6 +24,7 @@ Am creat scriptul in pyhton pentru interactiunea cu site-ul https://alibaba.com,
 - Am adaugat buton de vizualizare produse, si pagina in care apar produsele selectate. 
 <img width="394" alt="Screenshot 2024-06-20 at 11 12 12" src="https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/d8d7b29d-c9fc-47eb-9352-d70902e84a2d">
 <img width="394" alt="Screenshot 2024-06-20 at 11 12 42" src="https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/3f940307-9556-4662-b01f-765a65cdbdfb">
+
 # 21.06.2024
 M-am documentat despre interfata grafica a aplicatiei, si cum pot adauga functionalitati noi aplicatiei.
 - Am adaugat filtrarea produselor dupa nume
