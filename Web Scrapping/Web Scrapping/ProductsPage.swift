@@ -52,7 +52,7 @@ struct ProductsPage : View {
                 }
             }
                     }
-    
+    // functie de filtrare a datelor
     var filteredProducts: [Product] {
             if searchText.isEmpty {
                 return products
@@ -61,6 +61,8 @@ struct ProductsPage : View {
             }
         }
     
+    
+    // functie pentru accesarea API-ului si convertirea datelor din jsons
     func fetchProducts() {
         guard let url = URL(string: "http://172.20.10.5:8080/products") else {
             print("Invalid URL")

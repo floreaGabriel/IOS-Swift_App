@@ -29,7 +29,7 @@ struct Product: Identifiable, Decodable {
         self.id = UUID()
     }
     
-    // Adăugăm un initializer fără argumente pentru a evita problemele la decodare
+    // Adaugam un initializer fara argumente pentru a evita problemele la decodare
     init(id: UUID, name: String, price: String, sales: String, image_url: String, product_url: String) {
             self.id = UUID()
             self.name = name

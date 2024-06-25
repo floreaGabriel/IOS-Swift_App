@@ -43,6 +43,7 @@ struct ProductDetailsPage : View {
                                 .cornerRadius(10)
                         }
                         .padding()
+                    Spacer()
                     Link(destination: URL(string: product.product_url)!) {
                             Text("Vezi produsul pe pagina web")
                                 .font(.headline)
