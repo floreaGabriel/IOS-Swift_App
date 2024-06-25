@@ -31,8 +31,9 @@ M-am documentat despre interfata grafica a aplicatiei, si cum pot adauga functio
 - Am adauugat un buton de salvare cat si un buton de "Produse Salvate" pe pagina principala a aplicatiei.
 - Butonul "Produse salvate", salveaza produsele selectate local pe device, ceea ce face ca produsele salvate sa ramana aceleasi pentru orice instanta a aplicatiei.
 - Am adaugat buton de trimitere catre pagina web a produsului. 
-![WhatsApp Image 2024-06-25 at 08 20 24](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/9152fe49-84cb-487c-b60d-d3f31a653dab)
-![WhatsApp Image 2024-06-25 at 08 20 25](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/8a40553a-5ecd-475a-8bc6-b8736dce73c2)
-![WhatsApp Image 2024-06-25 at 08 20 26 (1)](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/d8fcb9bc-d7fc-4114-8e23-ab845bc5077f)
-![WhatsApp Image 2024-06-25 at 08 20 26](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/4c183a71-2931-4cf8-811f-cf1c45757400)
-![WhatsApp Image 2024-06-25 at 08 20 27](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/5e7c23e6-0544-453c-81ab-18f30661464a)
+
+![WhatsApp Image 2024-06-25 at 08 20 27](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/3f24cb50-22ce-4bd9-b430-70eea61b30f8)
+![WhatsApp Image 2024-06-25 at 08 20 26](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/f8204527-5f2c-43ef-81c3-a59ba2f5fb87)
+![WhatsApp Image 2024-06-25 at 08 20 26 (1)](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/f7691a1f-1735-4a91-8835-590d64ff48be)
+![WhatsApp Image 2024-06-25 at 08 20 25](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/3d3f4679-003f-4b2e-b877-4da05db2cd9e)
+![WhatsApp Image 2024-06-25 at 08 20 24](https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/a210780c-2f6b-4838-972a-c3791d43d959)
