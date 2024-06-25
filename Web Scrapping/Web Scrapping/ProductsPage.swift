@@ -11,6 +11,8 @@ struct ProductsPage : View {
     
     @State private var products: [Product] = []
     @State private var searchText: String = ""
+    @State private var isDataLoaded = false
+    
     var body: some View {
         
         VStack {
@@ -47,9 +49,10 @@ struct ProductsPage : View {
                         }
                     }
                 }
-                .onAppear{
+            .onAppear{
+                if !isDataLoaded {
                     fetchProducts()
-                }
+                }}
             }
                     }
     // functie de filtrare a datelor
@@ -92,6 +95,7 @@ struct ProductsPage : View {
                 let decodedResponse = try JSONDecoder().decode([Product].self, from: data)
                 DispatchQueue.main.async {
                     self.products = decodedResponse
+                    self.isDataLoaded = true
                     print("Products fetched successfully: \(self.products)")
                 }
             } catch {

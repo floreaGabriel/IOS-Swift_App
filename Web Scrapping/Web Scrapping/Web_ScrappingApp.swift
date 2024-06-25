@@ -11,7 +11,8 @@ import SwiftUI
 struct Web_ScrappingApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var salvatorDate = SalvatorDate()
-
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

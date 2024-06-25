@@ -8,6 +8,7 @@
 import Foundation
 import CoreData
 import SwiftUI
+import UserNotifications
 
 class SalvatorDate: ObservableObject {
     @Published var cartItems: [ProductItems] = []
@@ -48,5 +49,25 @@ class SalvatorDate: ObservableObject {
             saveContext()
             loadCartItems()
         }
+    
+    
+
+    func programNotification(for product: Product) {
+        let content = UNMutableNotificationContent()
+        content.title = "Produs Salvat"
+        content.body = "Ai salvat produsul \(product.name)."
+        content.sound = .default
+
+        // Programează notificarea sa apara dupa 5 secunde (pentru testare)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Eroare la programarea notificării: \(error.localizedDescription)")
+            }
+        }
+    }
+
 }
 

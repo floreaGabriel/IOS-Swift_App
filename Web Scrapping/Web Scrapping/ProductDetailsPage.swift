@@ -12,6 +12,7 @@ struct ProductDetailsPage : View {
     
     @EnvironmentObject var salvatorManager: SalvatorDate
     var product: Product
+    @State private var showConfirmation = false
     
     var body : some View {
         
@@ -34,6 +35,11 @@ struct ProductDetailsPage : View {
                     Spacer()
                     Button(action: {
                             salvatorManager.addToCart(product: product)
+                            salvatorManager.programNotification(for: product)
+                            showConfirmation = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                showConfirmation = false
+                            }
                         }) {
                             Text("Save Product")
                                 .font(.headline)
@@ -56,6 +62,9 @@ struct ProductDetailsPage : View {
                 }
                 .padding()
                 .navigationTitle("Product Detail")
+                .alert(isPresented: $showConfirmation) {
+                            Alert(title: Text("Product Saved"), message: Text("Produsul a fost salvat cu succes."), dismissButton: .default(Text("OK")))
+                        }
             }
         }
 
