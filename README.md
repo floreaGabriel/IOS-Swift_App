@@ -47,3 +47,8 @@ Am cautat cum pot adauga sistem de notificari si imbunatatire a performantelor a
 <img width="480" alt="Screenshot 2024-06-25 at 09 44 58" src="https://github.com/floreaGabriel/IOS-Swift_App/assets/137055373/a75bc6a6-a667-40ea-bde1-b34f51430c99">
 
 - Am imbunatatit performanta astfel incat sa nu imi mai incarce produsele de fiecare data pe pagina cu produse!
+# 26.06.2024
+Am ajustat scriptul in care aplicatia face scraping-ul.
+- M-am documentat pe YouTube despre web scraping
+- M-am uitat pe documentatia web scraping-ului: https://webscraper.io/documentation
+- Am imbunatatit performantele scriptului
